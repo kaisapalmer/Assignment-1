@@ -1,4 +1,6 @@
-
+/* How it's connected:
+*
+* */
 const button = document.getElementById('button');
 
 const para2 = document.getElementById('para2');
