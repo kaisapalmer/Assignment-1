@@ -11,10 +11,57 @@
    Base styles: opinionated defaults
    ========================================================================== */
 
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Helvetica Neue', sans-serif;
+}
+
+
 html {
   color: #222;
   font-size: 1em;
   line-height: 1.4;
+}
+
+/* Remove underline from all links */
+a{
+  text-decoration: none;
+}
+
+  /* styling the header */
+.header{
+  background-image: url('https://simon.piirainen.se/img/blurred_back.jpg');
+  background-size: cover;
+  padding: 100px;
+  text-align: center;
+  color: honeydew;
+  font-size: 24px;
+}
+
+/* styling the button */
+#button {
+  font-size: 18px;
+  margin-top: 16px;
+  margin-left: 16px;
+  border-radius: 5px;
+  border-width: 1px;
+  padding: 2px;
+
+}
+
+/* styling the second paragraph */
+#para2{
+  margin-left: 16px;
+  margin-top: 10px;
+  font-size: 20px;
+}
+
+/* adding margins */
+.footer{
+  margin-top: 50px;
+  margin-left: 16px;
 }
 
 /*
