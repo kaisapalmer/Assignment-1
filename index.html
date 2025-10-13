@@ -1,4 +1,15 @@
-<!--  -->
+<!--
+index.html is the foundation of a webpage.
+The index.html code is what is shown on a webpage, for examples <button></button> shows a button
+without any styling or interaction.
+Read further down about comments regarding link tags for css and link tags for JavaScripts
+
+Code flow: Browser reads the index.html file goes through it line by line
+meaning it start with everything in head-tag and then continues with the body.tag
+which makes it very important to arrange html tags in the correct order.
+In this case, app.js must be in the bottom of the page otherwise the script will run
+before the interacting elements are in the DOM.
+ -->
 
 <!doctype html>
 <html class="no-js" lang="">
@@ -6,7 +17,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Kaisas assaignment</title>
+  <title>Kaisa's assignment</title>
   <!-- loads style.css to the DOM -->
   <link rel="stylesheet" href="css/style.css">
   <meta name="description" content="">
@@ -27,16 +38,26 @@
 
 <body>
 <header class="header">
-  <h1>
+
+  <!-- Adding a main title with the id "titleHeader" that says "Kaisa's assignment" -->
+  <h1 id="titleHeader">Kaisa's assignment</h1>
+
+    <!-- Adding a paragraph with the id "para1" that says "This is the first obligated assignment -->
     <p id="para1">This is the first obligated assignment</p>
-  </h1>
+
 </header>
 
-<!-- Adding a button that says "click me!"-->
-<button id="button">Click me!</button>
+<!-- Adding a button that says "click me!" -->
+<button id="buttonText">Click me!</button>
 
-<!-- Adding a paragraph with the id message that says "This is the text when you haven't clicked on the button"-->
+<!-- Adding a paragraph with the id "para2" that says "This is the text when you haven't clicked on the button"-->
 <p id="para2">This is the text when you haven't clicked on the button.</p>
+
+<!-- Adding a paragraph with the ID "timeText" and showing the text "The time is: " -->
+<p id="timeText">The time is: </p>
+
+<!-- Creates a button with the ID "buttonTime" and that show the time when clicked -->
+<button id="buttonTime" type="button">Click me to show the time</button>
 
 <footer class="footer">
   <!-- Adding the LinkedIn logo as a link to my LinkedIn profile. target="_blank" opens the link in a new tab -->
@@ -44,14 +65,14 @@
     <img class="linkedIn" src="https://simon.piirainen.se/img/flat_linkedin.png" width="50"  alt="LinkedIn">
   </a>
 
-  <!-- Adding an email logo as a link to email me -->
-  <a id="email" href="mailto:kaisa.palmer@gmail.com">
+  <!-- Adding an email logo as a link to email me (not my real email of course) -->
+  <a id="email" href="mailto:mail@me.com">
     <img class="email" src="https://simon.piirainen.se/img/flat_email.png" width="50" alt="Email">
   </a>
 </footer>
 
 <!-- loads app.js to the DOM -->
-  <script src="js/app.js"></script>
+<script src="js/app.js"></script>
 
 </body>
 
