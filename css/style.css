@@ -16,6 +16,8 @@
   CSS file is linked to index.html using a link-tag: <link rel="stylesheet" href="css/style.css">
   CSS is used to style the webpage. For example, you're making your button blue and with rounded corners.
  */
+
+/* Making everything on the webpage have the same margin, padding and font if nothing else is said */
 *{
   margin: 0;
   padding: 0;
@@ -23,10 +25,16 @@
 }
 
 
+
 html {
   color: #222;
   font-size: 1em;
   line-height: 1.4;
+}
+
+/* Making that everything in the body tag is centered */
+body{
+  text-align: center;
 }
 
 /* Remove underline from all links */
@@ -58,6 +66,8 @@ a{
   border-radius: 5px;
   border-width: 1px;
   padding: 2px;
+  background-color: mintcream;
+  font-weight: 480;
 
 }
 
@@ -82,6 +92,8 @@ a{
   border-radius: 5px;
   border-width: 1px;
   padding: 2px;
+  background-color: mintcream;
+  font-weight: 480;
 }
 
 /* adding margins */
